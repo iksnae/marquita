@@ -71,3 +71,66 @@ This document outlines the integration of Ecuador-specific payment methods into 
 - Generate payment vouchers with reference codes
 - Payment status tracking via API
 - Defined expiration window (typically 24-72 hours)
+
+## Integration Architecture
+
+### Deno Deploy API Implementation
+
+```typescript
+// Example implementation structure for Ecuador payment methods
+import { serve } from "https://deno.land/std/http/server.ts";
+import { CardGateway } from "./gateways/card.ts";
+import { PayphoneGateway } from "./gateways/payphone.ts";
+import { BankTransferGateway } from "./gateways/bank-transfer.ts";
+import { CashPaymentGateway } from "./gateways/cash-payment.ts";
+import { config } from "../config.ts";
+
+serve(async (req) => {
+  const url = new URL(req.url);
+  const path = url.pathname;
+  
+  // Credit/debit card processing
+  if (path === "/api/payments/card") {
+    const cardProcessor = new CardGateway(config.card);
+    return await cardProcessor.processWithInstallments(req);
+  }
+  
+  // Payphone integration
+  if (path === "/api/payments/payphone") {
+    const payphone = new PayphoneGateway(config.payphone);
+    return await payphone.processPayment(req);
+  }
+  
+  // Bank transfer instructions
+  if (path === "/api/payments/bank-transfer") {
+    const bankTransfer = new BankTransferGateway(config.bankTransfer);
+    return await bankTransfer.generateInstructions(req);
+  }
+  
+  // Cash payment voucher
+  if (path === "/api/payments/cash-payment") {
+    const cashPayment = new CashPaymentGateway(config.cashPayment);
+    return await cashPayment.generateVoucher(req);
+  }
+  
+  // Payment notification webhooks
+  if (path === "/api/notifications") {
+    const paymentType = req.headers.get("X-Payment-Type");
+    
+    switch (paymentType) {
+      case "card":
+        return await handleCardNotification(req);
+      case "payphone":
+        return await handlePayphoneNotification(req);
+      case "bank-transfer":
+        return await handleBankTransferNotification(req);
+      case "cash-payment":
+        return await handleCashPaymentNotification(req);
+      default:
+        return new Response("Unknown payment type", { status: 400 });
+    }
+  }
+  
+  return new Response("Not found", { status: 404 });
+});
+```
