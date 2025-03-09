@@ -23,3 +23,37 @@ This document outlines the integration of Chile-specific payment methods into th
 - Hosted payment page option
 - Direct API integration for customized checkout
 - Robust transaction management and reporting
+
+### Khipu
+
+**Description**: A popular Chilean payment method allowing users to pay directly from their bank accounts through online banking.
+
+**Benefits**:
+- No need for credit cards
+- Lower transaction fees compared to card payments
+- High security (users authenticate directly with their bank)
+- Real-time payment confirmation
+- Widely used for services, utilities, and education payments
+- Trusted brand in the Chilean market
+
+**Implementation**:
+- API integration
+- Mobile-friendly payment flow
+- QR code payment option
+- Instant payment notification via webhooks
+
+### Multicaja
+
+**Description**: A payment processing service providing multiple payment options including bank transfers, prepaid cards, and cash options.
+
+**Benefits**:
+- Reaches banked and unbanked populations
+- Cash payment option through extensive physical network
+- Prepaid virtual cards for online payments
+- Simplified integration for multiple payment types
+- Support for recurring billing
+
+**Implementation**:
+- Single API integration for multiple payment methods
+- Payment status tracking through API calls
+- Automated reconciliation services
