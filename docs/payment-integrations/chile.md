@@ -204,3 +204,45 @@ serve(async (req) => {
    - System displays installment plan
    - Payment processor handles authorization and installment setup
    - User receives confirmation on merchant site
+
+## Configuration
+
+Payment gateways are configured through environment variables or config files:
+
+```json
+{
+  "chile": {
+    "webpay": {
+      "commerceCode": "WEBPAY_COMMERCE_CODE",
+      "apiKey": "WEBPAY_API_KEY",
+      "environment": "production",
+      "webhookUrl": "https://api.yourdomain.com/notifications",
+      "returnUrl": "https://yourdomain.com/checkout/confirmation"
+    },
+    "khipu": {
+      "receiverId": "KHIPU_RECEIVER_ID",
+      "secretKey": "KHIPU_SECRET_KEY",
+      "webhookUrl": "https://api.yourdomain.com/notifications",
+      "returnUrl": "https://yourdomain.com/checkout/confirmation"
+    },
+    "multicaja": {
+      "apiKey": "MULTICAJA_API_KEY",
+      "merchantId": "MULTICAJA_MERCHANT_ID",
+      "webhookUrl": "https://api.yourdomain.com/notifications",
+      "returnUrl": "https://yourdomain.com/checkout/confirmation"
+    },
+    "mach": {
+      "apiKey": "MACH_API_KEY",
+      "merchantId": "MACH_MERCHANT_ID",
+      "webhookUrl": "https://api.yourdomain.com/notifications"
+    },
+    "creditCard": {
+      "acquirerId": "ACQUIRER_ID",
+      "merchantId": "MERCHANT_ID",
+      "terminalId": "TERMINAL_ID",
+      "maxInstallments": 12,
+      "interestFree": true
+    }
+  }
+}
+```
