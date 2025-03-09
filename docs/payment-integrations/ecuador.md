@@ -55,3 +55,19 @@ This document outlines the integration of Ecuador-specific payment methods into 
 - Unique transfer reference generation
 - Manual or automated reconciliation
 - Clear payment instructions for customers
+
+### Cash Payment Networks
+
+**Description**: Integration with cash payment networks like Facilito, Western Union, and ServiPagos that allow users to pay for online purchases with cash at physical locations.
+
+**Benefits**:
+- Reaches the significant unbanked population in Ecuador
+- Trusted payment method for those without cards or digital banking
+- Wide network of payment points throughout the country
+- No need for financial information from customers
+- Higher conversion rates for certain demographics
+
+**Implementation**:
+- Generate payment vouchers with reference codes
+- Payment status tracking via API
+- Defined expiration window (typically 24-72 hours)
