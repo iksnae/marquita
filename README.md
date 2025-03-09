@@ -23,12 +23,17 @@ Project Marquita is a suite of tools designed to empower non-technical entrepren
 
 ### Payment Integrations
 - [Payment Integration Overview](docs/payment-integrations/index.md) - General payment integration approach
-- [Colombia](docs/payment-integrations/colombia.md) - PSE and DaviPlata integration
-- [USA](docs/payment-integrations/usa.md) - Credit card, ACH, and alternative payment methods
+- [Argentina](docs/payment-integrations/argentina.md) - Mercado Pago, Rapipago/Pago Fácil, and installment-based cards
 - [Brazil](docs/payment-integrations/brazil.md) - Pix, Boleto, and Brazilian payment methods
-- [Mexico](docs/payment-integrations/mexico.md) - SPEI, Oxxo Pay, and installment-based card payments
+- [Chile](docs/payment-integrations/chile.md) - Webpay Plus, Khipu, Multicaja, and MACH
+- [Colombia](docs/payment-integrations/colombia.md) - PSE and DaviPlata integration
 - [Costa Rica](docs/payment-integrations/costa-rica.md) - SINPE Móvil, SINPE transfers, and local cards
+- [Ecuador](docs/payment-integrations/ecuador.md) - Credit/debit cards, Payphone, and cash payment networks
+- [Guatemala](docs/payment-integrations/guatemala.md) - Credit/debit cards, bank transfers, and mobile wallets
+- [Mexico](docs/payment-integrations/mexico.md) - SPEI, Oxxo Pay, and installment-based card payments
+- [Panama](docs/payment-integrations/panama.md) - Credit/debit cards, ACH transfers, Yappy, and Nequi
 - [Peru](docs/payment-integrations/peru.md) - PagoEfectivo, Yape, CCI transfers, and SafetyPay
+- [USA](docs/payment-integrations/usa.md) - Credit card, ACH, and alternative payment methods
 
 ### Guides
 - [Getting Started](docs/getting-started.md) - Quick start guide for new users
@@ -78,12 +83,17 @@ Marquita offers several specialized templates for different business needs:
 
 Marquita is designed to work globally, with special optimizations for:
 
-- **Colombia**: Integration with PSE and DaviPlata payment systems
-- **USA**: Support for ACH, credit cards, and digital wallets
+- **Argentina**: Integration with Mercado Pago, Rapipago/Pago Fácil, and installment payments
 - **Brazil**: Integration with Pix, Boleto, and installment payments
-- **Mexico**: Support for SPEI, Oxxo Pay, and installment-based cards
+- **Chile**: Support for Webpay Plus, Khipu, Multicaja, and MACH
+- **Colombia**: Integration with PSE and DaviPlata payment systems
 - **Costa Rica**: Support for SINPE Móvil, SINPE transfers, and local cards
+- **Ecuador**: Support for credit/debit cards, Payphone, and cash payment networks
+- **Guatemala**: Integration with local cards, bank transfers, and mobile wallets
+- **Mexico**: Support for SPEI, Oxxo Pay, and installment-based cards
+- **Panama**: Support for cards, ACH transfers, Yappy, and Nequi
 - **Peru**: Support for PagoEfectivo, Yape, CCI transfers, and SafetyPay
+- **USA**: Support for ACH, credit cards, and digital wallets
 
 Additional regions will be added based on community contributions.
 
