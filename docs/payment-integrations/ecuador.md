@@ -39,3 +39,19 @@ This document outlines the integration of Ecuador-specific payment methods into 
 - QR code generation
 - Mobile payment button
 - Real-time payment confirmation
+
+### Bank Transfers
+
+**Description**: Direct bank transfers using the Ecuadorian banking system.
+
+**Benefits**:
+- Widely trusted payment method
+- Lower transaction fees than card payments
+- Good for high-value transactions
+- Preferred by many businesses for B2B payments
+- No chargebacks
+
+**Implementation**:
+- Unique transfer reference generation
+- Manual or automated reconciliation
+- Clear payment instructions for customers
