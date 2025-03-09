@@ -90,3 +90,75 @@ This document outlines the integration of Chile-specific payment methods into th
 - Integration with local payment processors
 - Support for installment plans
 - Clear display of installment options
+
+## Integration Architecture
+
+### Deno Deploy API Implementation
+
+```typescript
+// Example implementation structure for Chile payment methods
+import { serve } from "https://deno.land/std/http/server.ts";
+import { WebpayGateway } from "./gateways/webpay.ts";
+import { KhipuGateway } from "./gateways/khipu.ts";
+import { MulticajaGateway } from "./gateways/multicaja.ts";
+import { MachGateway } from "./gateways/mach.ts";
+import { ChileCardGateway } from "./gateways/chile-cards.ts";
+import { config } from "../config.ts";
+
+serve(async (req) => {
+  const url = new URL(req.url);
+  const path = url.pathname;
+  
+  // Webpay integration endpoint
+  if (path === "/api/payments/webpay") {
+    const webpay = new WebpayGateway(config.webpay);
+    return await webpay.createTransaction(req);
+  }
+  
+  // Khipu integration endpoint
+  if (path === "/api/payments/khipu") {
+    const khipu = new KhipuGateway(config.khipu);
+    return await khipu.createPayment(req);
+  }
+  
+  // Multicaja integration endpoint
+  if (path === "/api/payments/multicaja") {
+    const multicaja = new MulticajaGateway(config.multicaja);
+    return await multicaja.processPayment(req);
+  }
+  
+  // MACH integration endpoint
+  if (path === "/api/payments/mach") {
+    const mach = new MachGateway(config.mach);
+    return await mach.generateQrPayment(req);
+  }
+  
+  // Chilean credit card processing with installments
+  if (path === "/api/payments/credit-card") {
+    const cardProcessor = new ChileCardGateway(config.creditCard);
+    return await cardProcessor.processWithInstallments(req);
+  }
+  
+  // Payment notification webhooks
+  if (path === "/api/notifications") {
+    const paymentType = req.headers.get("X-Payment-Type");
+    
+    switch (paymentType) {
+      case "webpay":
+        return await handleWebpayNotification(req);
+      case "khipu":
+        return await handleKhipuNotification(req);
+      case "multicaja":
+        return await handleMulticajaNotification(req);
+      case "mach":
+        return await handleMachNotification(req);
+      case "credit-card":
+        return await handleCardNotification(req);
+      default:
+        return new Response("Unknown payment type", { status: 400 });
+    }
+  }
+  
+  return new Response("Not found", { status: 404 });
+});
+```
