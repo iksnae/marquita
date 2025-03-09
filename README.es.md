@@ -17,27 +17,27 @@ El Proyecto Marquita es un conjunto de herramientas diseñadas para capacitar a 
 ## Documentación
 
 ### Arquitectura y diseño
-- [Descripción general de la arquitectura](docs/architecture.md) - Arquitectura técnica central
-- [Sistema de plantillas](docs/template-system.md) - Diseño del sistema de plantillas
-- [Desarrollo asistido por IA](docs/ai-assisted-development.md) - Cómo los agentes de IA gestionan la creación y actualización del sitio
+- [Descripción general de la arquitectura](docs/architecture.es.md) - Arquitectura técnica central
+- [Sistema de plantillas](docs/template-system.es.md) - Diseño del sistema de plantillas
+- [Desarrollo asistido por IA](docs/ai-assisted-development.es.md) - Cómo los agentes de IA gestionan la creación y actualización del sitio
 
 ### Integraciones de pago
-- [Descripción general de integración de pagos](docs/payment-integrations/index.md) - Enfoque general de integración de pagos
-- [Argentina](docs/payment-integrations/argentina.md) - Mercado Pago, Rapipago/Pago Fácil y tarjetas con pagos en cuotas
-- [Brasil](docs/payment-integrations/brazil.md) - Pix, Boleto y métodos de pago brasileños
-- [Chile](docs/payment-integrations/chile.md) - Webpay Plus, Khipu, Multicaja y MACH
-- [Colombia](docs/payment-integrations/colombia.md) - Integración con PSE y DaviPlata
-- [Costa Rica](docs/payment-integrations/costa-rica.md) - SINPE Móvil, transferencias SINPE y tarjetas locales
-- [Ecuador](docs/payment-integrations/ecuador.md) - Tarjetas de crédito/débito, Payphone y redes de pago en efectivo
-- [Guatemala](docs/payment-integrations/guatemala.md) - Tarjetas de crédito/débito, transferencias bancarias y billeteras móviles
-- [México](docs/payment-integrations/mexico.md) - SPEI, Oxxo Pay y pagos con tarjeta en cuotas
-- [Panamá](docs/payment-integrations/panama.md) - Tarjetas de crédito/débito, transferencias ACH, Yappy y Nequi
-- [Perú](docs/payment-integrations/peru.md) - PagoEfectivo, Yape, transferencias CCI y SafetyPay
-- [EE.UU.](docs/payment-integrations/usa.md) - Tarjeta de crédito, ACH y métodos de pago alternativos
+- [Descripción general de integración de pagos](docs/payment-integrations/index.es.md) - Enfoque general de integración de pagos
+- [Argentina](docs/payment-integrations/argentina.es.md) - Mercado Pago, Rapipago/Pago Fácil y tarjetas con pagos en cuotas
+- [Brasil](docs/payment-integrations/brazil.es.md) - Pix, Boleto y métodos de pago brasileños
+- [Chile](docs/payment-integrations/chile.es.md) - Webpay Plus, Khipu, Multicaja y MACH
+- [Colombia](docs/payment-integrations/colombia.es.md) - Integración con PSE y DaviPlata
+- [Costa Rica](docs/payment-integrations/costa-rica.es.md) - SINPE Móvil, transferencias SINPE y tarjetas locales
+- [Ecuador](docs/payment-integrations/ecuador.es.md) - Tarjetas de crédito/débito, Payphone y redes de pago en efectivo
+- [Guatemala](docs/payment-integrations/guatemala.es.md) - Tarjetas de crédito/débito, transferencias bancarias y billeteras móviles
+- [México](docs/payment-integrations/mexico.es.md) - SPEI, Oxxo Pay y pagos con tarjeta en cuotas
+- [Panamá](docs/payment-integrations/panama.es.md) - Tarjetas de crédito/débito, transferencias ACH, Yappy y Nequi
+- [Perú](docs/payment-integrations/peru.es.md) - PagoEfectivo, Yape, transferencias CCI y SafetyPay
+- [EE.UU.](docs/payment-integrations/usa.es.md) - Tarjeta de crédito, ACH y métodos de pago alternativos
 
 ### Guías
-- [Cómo empezar](docs/getting-started.md) - Guía de inicio rápido para nuevos usuarios
-- [Hoja de ruta del proyecto](docs/roadmap.md) - Plan de desarrollo e hitos
+- [Cómo empezar](docs/getting-started.es.md) - Guía de inicio rápido para nuevos usuarios
+- [Hoja de ruta del proyecto](docs/roadmap.es.md) - Plan de desarrollo e hitos
 
 ## Componentes del proyecto
 
@@ -57,7 +57,7 @@ Marquita consta de varios repositorios interconectados:
 
 Para emprendedores que buscan crear un sitio con Marquita:
 
-1. Revisa la guía de [Cómo empezar](docs/getting-started.md)
+1. Revisa la guía de [Cómo empezar](docs/getting-started.es.md)
 2. Elige una plantilla que se adapte a las necesidades de tu negocio
 3. Sigue el proceso de configuración guiado con asistencia de IA
 4. Configura tu sitio con la información de tu negocio
@@ -65,10 +65,10 @@ Para emprendedores que buscan crear un sitio con Marquita:
 
 Para desarrolladores que buscan contribuir:
 
-1. Revisa la documentación del [Sistema de plantillas](docs/template-system.md)
-2. Explora la [Descripción general de la arquitectura](docs/architecture.md)
-3. Consulta la [Hoja de ruta del proyecto](docs/roadmap.md) para conocer las áreas de enfoque actuales
-4. Sigue nuestras [directrices de contribución](CONTRIBUTING.md)
+1. Revisa la documentación del [Sistema de plantillas](docs/template-system.es.md)
+2. Explora la [Descripción general de la arquitectura](docs/architecture.es.md)
+3. Consulta la [Hoja de ruta del proyecto](docs/roadmap.es.md) para conocer las áreas de enfoque actuales
+4. Sigue nuestras [directrices de contribución](CONTRIBUTING.es.md)
 
 ## Plantillas
 
@@ -108,7 +108,7 @@ Se añadirán regiones adicionales basadas en contribuciones de la comunidad.
 
 ## Contribuir
 
-Damos la bienvenida a contribuciones de desarrolladores, diseñadores y emprendedores. Consulta nuestras [directrices de contribución](CONTRIBUTING.md) para comenzar.
+Damos la bienvenida a contribuciones de desarrolladores, diseñadores y emprendedores. Consulta nuestras [directrices de contribución](CONTRIBUTING.es.md) para comenzar.
 
 ## Licencia
 
