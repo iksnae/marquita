@@ -27,6 +27,8 @@ Project Marquita is a suite of tools designed to empower non-technical entrepren
 - [USA](docs/payment-integrations/usa.md) - Credit card, ACH, and alternative payment methods
 - [Brazil](docs/payment-integrations/brazil.md) - Pix, Boleto, and Brazilian payment methods
 - [Mexico](docs/payment-integrations/mexico.md) - SPEI, Oxxo Pay, and installment-based card payments
+- [Costa Rica](docs/payment-integrations/costa-rica.md) - SINPE Móvil, SINPE transfers, and local cards
+- [Peru](docs/payment-integrations/peru.md) - PagoEfectivo, Yape, CCI transfers, and SafetyPay
 
 ### Guides
 - [Getting Started](docs/getting-started.md) - Quick start guide for new users
@@ -80,6 +82,8 @@ Marquita is designed to work globally, with special optimizations for:
 - **USA**: Support for ACH, credit cards, and digital wallets
 - **Brazil**: Integration with Pix, Boleto, and installment payments
 - **Mexico**: Support for SPEI, Oxxo Pay, and installment-based cards
+- **Costa Rica**: Support for SINPE Móvil, SINPE transfers, and local cards
+- **Peru**: Support for PagoEfectivo, Yape, CCI transfers, and SafetyPay
 
 Additional regions will be added based on community contributions.
 
