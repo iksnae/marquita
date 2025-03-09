@@ -134,3 +134,40 @@ serve(async (req) => {
   return new Response("Not found", { status: 404 });
 });
 ```
+
+## User Journey
+
+1. **Checkout Initiation**:
+   - User navigates to checkout page
+   - Selects payment method (Card, Payphone, Bank Transfer, Cash Payment)
+
+2. **Credit/Debit Card Flow**:
+   - User enters card details
+   - Selects number of installments if applicable
+   - System displays installment plan and total cost
+   - User confirms payment
+   - Payment is processed
+   - User receives confirmation
+
+3. **Payphone Flow**:
+   - User selects Payphone
+   - System generates payment request
+   - User scans QR code or clicks payment link
+   - User authorizes payment in Payphone app
+   - System receives confirmation
+   - User is redirected to confirmation page
+
+4. **Bank Transfer Flow**:
+   - System displays bank account details and reference number
+   - User makes transfer via their bank
+   - System verifies transfer (manually or automatically)
+   - Order processing begins after verification
+   - User receives confirmation email
+
+5. **Cash Payment Flow**:
+   - System generates payment voucher with unique reference
+   - User receives voucher via email or download
+   - User pays at any affiliated payment location
+   - System is notified when payment is made
+   - Order processing begins after payment confirmation
+   - User receives confirmation email
