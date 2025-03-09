@@ -171,3 +171,49 @@ serve(async (req) => {
    - System is notified when payment is made
    - Order processing begins after payment confirmation
    - User receives confirmation email
+
+## Configuration
+
+Payment gateways are configured through environment variables or config files:
+
+```json
+{
+  "ecuador": {
+    "card": {
+      "merchantId": "MERCHANT_ID",
+      "apiKey": "CARD_API_KEY",
+      "environment": "production",
+      "maxInstallments": 12,
+      "interestRates": {
+        "3": 4.5,
+        "6": 8.9,
+        "9": 13.5,
+        "12": 18.0
+      },
+      "webhookUrl": "https://api.yourdomain.com/notifications"
+    },
+    "payphone": {
+      "clientId": "PAYPHONE_CLIENT_ID",
+      "clientSecret": "PAYPHONE_CLIENT_SECRET",
+      "storeId": "PAYPHONE_STORE_ID",
+      "webhookUrl": "https://api.yourdomain.com/notifications",
+      "returnUrl": "https://yourdomain.com/checkout/confirmation"
+    },
+    "bankTransfer": {
+      "accountNumber": "BANK_ACCOUNT_NUMBER",
+      "accountName": "COMPANY_NAME",
+      "bankName": "BANK_NAME",
+      "accountType": "savings", // or "checking"
+      "identificationNumber": "RUC_NUMBER",
+      "notificationEmail": "payments@yourdomain.com"
+    },
+    "cashPayment": {
+      "providerId": "PROVIDER_ID",
+      "apiKey": "CASH_PAYMENT_API_KEY",
+      "expirationHours": 48,
+      "servicePointsUrl": "https://yourdomain.com/payment-locations",
+      "webhookUrl": "https://api.yourdomain.com/notifications"
+    }
+  }
+}
+```
