@@ -57,3 +57,36 @@ This document outlines the integration of Chile-specific payment methods into th
 - Single API integration for multiple payment methods
 - Payment status tracking through API calls
 - Automated reconciliation services
+
+### MACH
+
+**Description**: A popular Chilean digital wallet and prepaid card that doesn't require a traditional bank account.
+
+**Benefits**:
+- Reaches younger, tech-savvy consumers
+- Growing user base (over 3 million users in Chile)
+- Lower transaction costs
+- Easy integration for mobile checkout
+- No traditional bank account required for users
+- Enables immediate payments
+
+**Implementation**:
+- API integration for direct payments
+- QR code payment capability
+- Mobile SDK for in-app integrations
+
+### Chilean Credit/Debit Cards
+
+**Description**: Direct processing of Chilean cards with support for installment payments ("cuotas sin interés").
+
+**Benefits**:
+- Essential installment payment options (3, 6, 12 cuotas)
+- Local acquiring for better approval rates
+- Support for local card networks
+- Compliance with Chilean financial regulations
+- Better exchange rates with local processing
+
+**Implementation**:
+- Integration with local payment processors
+- Support for installment plans
+- Clear display of installment options
