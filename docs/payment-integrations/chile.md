@@ -162,3 +162,45 @@ serve(async (req) => {
   return new Response("Not found", { status: 404 });
 });
 ```
+
+## User Journey
+
+1. **Checkout Initiation**:
+   - User navigates to checkout page
+   - Selects payment method (Webpay, Khipu, Multicaja, MACH, Credit Card)
+
+2. **Webpay Flow**:
+   - User selects Webpay
+   - Either redirected to Webpay hosted page or stays on site (direct integration)
+   - Enters card details and completes 3D Secure verification if required
+   - Transaction is processed
+   - User is redirected back to merchant site with confirmation
+
+3. **Khipu Flow**:
+   - User selects Khipu
+   - System creates Khipu payment request
+   - User is redirected to Khipu or shown QR code
+   - User selects their bank and authenticates
+   - Transaction is processed through user's bank
+   - User is redirected back to merchant site with confirmation
+
+4. **Multicaja Flow**:
+   - User selects Multicaja
+   - Chooses payment sub-method (bank transfer, prepaid, cash)
+   - For cash: voucher is generated for payment at physical locations
+   - For bank/prepaid: user completes payment online
+   - User is redirected back to merchant site with confirmation
+
+5. **MACH Flow**:
+   - User selects MACH
+   - System generates QR code or payment link
+   - User scans QR or follows link to complete payment in MACH app
+   - Transaction is processed
+   - User returns to merchant site with confirmation
+
+6. **Credit Card Flow with Installments**:
+   - User enters card details
+   - Selects number of installments (1x, 3x, 6x, 12x)
+   - System displays installment plan
+   - Payment processor handles authorization and installment setup
+   - User receives confirmation on merchant site
