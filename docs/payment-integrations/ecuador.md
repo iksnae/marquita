@@ -21,3 +21,21 @@ This document outlines the integration of Ecuador-specific payment methods into 
 - Integration with local payment processors
 - Support for installment plans (3, 6, 9, 12 months)
 - Clear display of installment costs
+
+### Payphone
+
+**Description**: A popular Ecuadorian mobile payment platform that allows users to make payments using their smartphones.
+
+**Benefits**:
+- Growing user base in Ecuador
+- Simple payment experience for customers
+- Lower transaction fees compared to credit cards
+- No need for a physical card or bank account
+- QR code payments for in-person transactions
+- API for online integration
+
+**Implementation**:
+- API integration for e-commerce
+- QR code generation
+- Mobile payment button
+- Real-time payment confirmation
