@@ -11,6 +11,7 @@ We currently provide payment integration documentation and implementation guides
 - [Colombia](./colombia.md) - PSE (Pago Seguro en Línea) and DaviPlata integration
 - [USA](./usa.md) - Credit card, ACH, BNPL (Buy Now, Pay Later), and digital wallets
 - [Brazil](./brazil.md) - Pix, Boleto Bancário, and installment-based credit card payments
+- [Mexico](./mexico.md) - SPEI (interbank transfers), Oxxo Pay (cash payments), and installment-based cards
 
 ## Integration Architecture
 
