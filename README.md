@@ -26,6 +26,7 @@ Project Marquita is a suite of tools designed to empower non-technical entrepren
 - [Colombia](docs/payment-integrations/colombia.md) - PSE and DaviPlata integration
 - [USA](docs/payment-integrations/usa.md) - Credit card, ACH, and alternative payment methods
 - [Brazil](docs/payment-integrations/brazil.md) - Pix, Boleto, and Brazilian payment methods
+- [Mexico](docs/payment-integrations/mexico.md) - SPEI, Oxxo Pay, and installment-based card payments
 
 ### Guides
 - [Getting Started](docs/getting-started.md) - Quick start guide for new users
@@ -78,6 +79,7 @@ Marquita is designed to work globally, with special optimizations for:
 - **Colombia**: Integration with PSE and DaviPlata payment systems
 - **USA**: Support for ACH, credit cards, and digital wallets
 - **Brazil**: Integration with Pix, Boleto, and installment payments
+- **Mexico**: Support for SPEI, Oxxo Pay, and installment-based cards
 
 Additional regions will be added based on community contributions.
 
