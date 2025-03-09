@@ -8,12 +8,17 @@ Project Marquita provides region-specific payment integration modules to help en
 
 We currently provide payment integration documentation and implementation guides for the following regions:
 
-- [Colombia](./colombia.md) - PSE (Pago Seguro en Línea) and DaviPlata integration
-- [USA](./usa.md) - Credit card, ACH, BNPL (Buy Now, Pay Later), and digital wallets
+- [Argentina](./argentina.md) - Mercado Pago, Rapipago/Pago Fácil, bank transfers, and installment-based cards
 - [Brazil](./brazil.md) - Pix, Boleto Bancário, and installment-based credit card payments
-- [Mexico](./mexico.md) - SPEI (interbank transfers), Oxxo Pay (cash payments), and installment-based cards
+- [Chile](./chile.md) - Webpay Plus, Khipu, Multicaja, MACH, and installment-based card payments
+- [Colombia](./colombia.md) - PSE (Pago Seguro en Línea) and DaviPlata integration
 - [Costa Rica](./costa-rica.md) - SINPE Móvil, SINPE transfers, and local card processing
+- [Ecuador](./ecuador.md) - Credit/debit cards, Payphone, bank transfers, and cash payment networks
+- [Guatemala](./guatemala.md) - Credit/debit cards, bank transfers, cash payment networks, and mobile wallets
+- [Mexico](./mexico.md) - SPEI (interbank transfers), Oxxo Pay (cash payments), and installment-based cards
+- [Panama](./panama.md) - Credit/debit cards, ACH transfers, Yappy, and Nequi digital wallet
 - [Peru](./peru.md) - PagoEfectivo, Yape, CCI transfers, and SafetyPay
+- [USA](./usa.md) - Credit card, ACH, BNPL (Buy Now, Pay Later), and digital wallets
 
 ## Integration Architecture
 
