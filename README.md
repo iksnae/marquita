@@ -2,6 +2,8 @@
 
 > Open-source business starter kit with AI-assisted management, GitHub Pages deployment, and third-party integrations for non-technical entrepreneurs.
 
+**Language**: [English (current)](README.md) | [Español](README.es.md) | [Português](README.pt.md)
+
 ## Overview
 
 Project Marquita is a suite of tools designed to empower non-technical entrepreneurs to establish and maintain their online business presence without requiring specialized technical knowledge or expensive intermediaries. The project combines the power of GitHub Pages hosting with AI-assisted development to create a zero-to-low cost solution for small business owners worldwide.
