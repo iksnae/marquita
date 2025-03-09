@@ -2,6 +2,8 @@
 
 > Kit de inicio de negocios de código abierto con gestión asistida por IA, despliegue en GitHub Pages e integraciones con terceros para emprendedores sin conocimientos técnicos.
 
+**Idioma**: [English](README.md) | [Español (actual)](README.es.md) | [Português](README.pt.md)
+
 ## Descripción general
 
 El Proyecto Marquita es un conjunto de herramientas diseñadas para capacitar a emprendedores sin conocimientos técnicos para establecer y mantener su presencia comercial en línea sin requerir conocimientos técnicos especializados o intermediarios costosos. El proyecto combina el poder del alojamiento de GitHub Pages con el desarrollo asistido por IA para crear una solución de costo cero a bajo para propietarios de pequeñas empresas en todo el mundo.
