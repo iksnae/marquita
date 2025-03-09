@@ -36,10 +36,14 @@ Project Marquita is a suite of tools designed to empower non-technical entrepren
 Marquita consists of several interconnected repositories:
 
 1. **Core Framework** (this repository): Documentation, guides, and project coordination
-2. **Website Templates**: Collection of customizable templates for different business types
-3. **Integration Modules**: Connectors for third-party services (payments, analytics, etc.)
-4. **Deno API Services**: Backend services for handling integrations and secure operations
-5. **Marketing Automation**: Tools for content distribution across platforms
+2. **Base Template**: [marquita-base-template](https://github.com/iksnae/marquita-base-template) - Foundation for all business website templates
+3. **Business-Specific Templates** (coming soon):
+   - E-commerce Template
+   - Service Business Template
+   - Portfolio Template
+   - Landing Page Template
+4. **Deno API Services** (coming soon): Backend services for handling integrations and secure operations
+5. **Marketing Automation** (coming soon): Tools for content distribution across platforms
 
 ## Getting Started
 
