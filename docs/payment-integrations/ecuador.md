@@ -1,0 +1,23 @@
+# Ecuador Payment Integrations
+
+## Overview
+
+This document outlines the integration of Ecuador-specific payment methods into the Marquita platform. Ecuador presents a unique payment landscape with its dollarized economy and a mix of traditional and emerging digital payment methods. Integrating local payment solutions is essential for success in the Ecuadorian market, providing better conversion rates and addressing local consumer preferences.
+
+## Supported Payment Methods
+
+### Credit and Debit Cards
+
+**Description**: Processing of Ecuadorian credit and debit cards, with support for installment payments ("diferido").
+
+**Benefits**:
+- Familiar payment method for Ecuadorian consumers
+- Support for local card networks
+- Installment payment options essential for higher-value purchases
+- Wide acceptance among middle and upper-income consumers
+- Compliance with Ecuadorian financial regulations
+
+**Implementation**:
+- Integration with local payment processors
+- Support for installment plans (3, 6, 9, 12 months)
+- Clear display of installment costs
