@@ -12,6 +12,8 @@ We currently provide payment integration documentation and implementation guides
 - [USA](./usa.md) - Credit card, ACH, BNPL (Buy Now, Pay Later), and digital wallets
 - [Brazil](./brazil.md) - Pix, Boleto Bancário, and installment-based credit card payments
 - [Mexico](./mexico.md) - SPEI (interbank transfers), Oxxo Pay (cash payments), and installment-based cards
+- [Costa Rica](./costa-rica.md) - SINPE Móvil, SINPE transfers, and local card processing
+- [Peru](./peru.md) - PagoEfectivo, Yape, CCI transfers, and SafetyPay
 
 ## Integration Architecture
 
